@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2db9cf;
+  margin-bottom: 20px;
+}
+
+.option {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.option label {
+  display: flex;
+  align-items: center;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.option .details {
+  margin-left: 5px;
+}
+
+.option .details strong {
+  display: block;
+}
+
+.option .details .price {
+  margin-top: 5px;
+}
+
+
+.discount {
+  color: #28a745;
+  font-size: 12px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.discount .percentage {
+  font-weight: bold;
+  align-items: end;
+  margin-left: 10px;
+}
+
+
+.option .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.option .original-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #888;
+}
+
+.option.selected {
+  border-color: #2db9cf;
+}
+
+.most-popular {
+  position: relative;
+}
+
+.most-popular::before {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  background: #2db9cf;
+  color: white;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.dropdowns {
+  display: none;
+  flex-direction: column; 
+  gap: 10px; 
+  margin-top: 5px;
+}
+
+.dropdown-row {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px; 
+  margin-bottom: 5px;
+}
+
+.dropdown {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-pair {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.dropdown label {
+  font-size: 14px;
+  display: block; 
+  margin-bottom: 5px;
+}
+
+.dropdown select {
+  width: 50%; 
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.shipping {
+  margin-top: 20px;
+}
+
+.shipping p {
+  margin: 5px 0;
+  color: #888;
+}
+
+.shipping strong {
+  font-size: 18px;
+  color: black;
+}
+
+.add-to-cart {
+  width: 100%;
+  background: #2db9cf;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #31707f;
+}
